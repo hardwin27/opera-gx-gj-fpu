@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_rubbish_handler",
+    "path": "objects/obj_rubbish_handler/obj_rubbish_handler.yy",
+  },
   "physicsObject": true,
   "physicsSensor": false,
   "physicsShape": 0,
@@ -23,7 +26,9 @@
     {"x":31.0,"y":33.0,},
     {"x":23.0,"y":33.0,},
   ],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":true,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
