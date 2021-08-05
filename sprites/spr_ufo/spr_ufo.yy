@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 28,
-  "bbox_right": 99,
-  "bbox_top": 32,
-  "bbox_bottom": 95,
+  "bbox_left": 4,
+  "bbox_right": 59,
+  "bbox_top": 17,
+  "bbox_bottom": 45,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 128,
-  "height": 128,
+  "width": 64,
+  "height": 64,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1461a2d3-999d-4a6f-89dd-945441b275df","path":"sprites/spr_ufo/spr_ufo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1461a2d3-999d-4a6f-89dd-945441b275df","path":"sprites/spr_ufo/spr_ufo.yy",},"LayerId":{"name":"27250181-6fab-4ed5-a21a-296bc13e2773","path":"sprites/spr_ufo/spr_ufo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ufo","path":"sprites/spr_ufo/spr_ufo.yy",},"resourceVersion":"1.0","name":"1461a2d3-999d-4a6f-89dd-945441b275df","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"42af16b1-3fc6-4bac-8e71-69570cf9846b","path":"sprites/spr_ufo/spr_ufo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"42af16b1-3fc6-4bac-8e71-69570cf9846b","path":"sprites/spr_ufo/spr_ufo.yy",},"LayerId":{"name":"48d6a444-2d8d-4a1b-8efc-6e593bb89ea4","path":"sprites/spr_ufo/spr_ufo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_ufo","path":"sprites/spr_ufo/spr_ufo.yy",},"resourceVersion":"1.0","name":"42af16b1-3fc6-4bac-8e71-69570cf9846b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_ufo","path":"sprites/spr_ufo/spr_ufo.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"038bc8f4-3a5f-49f5-b637-d369c6ce4ae2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1461a2d3-999d-4a6f-89dd-945441b275df","path":"sprites/spr_ufo/spr_ufo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0f428968-7da9-4989-b0a0-f918cfe544cd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"42af16b1-3fc6-4bac-8e71-69570cf9846b","path":"sprites/spr_ufo/spr_ufo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 64,
-    "yorigin": 64,
+    "xorigin": 32,
+    "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ufo","path":"sprites/spr_ufo/spr_ufo.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"27250181-6fab-4ed5-a21a-296bc13e2773","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"48d6a444-2d8d-4a1b-8efc-6e593bb89ea4","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

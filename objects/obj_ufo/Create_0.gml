@@ -13,13 +13,19 @@ gravity = 0.2;
 
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1
+/// @DnDHash : 172F3435
+/// @DnDArgument : "var" "ufo_state"
+global.ufo_state = 0;
+
+/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDVersion : 1
 /// @DnDHash : 36AB3C5E
-/// @DnDArgument : "var" "high_score"
-global.high_score = 0;
+/// @DnDArgument : "var" "score"
+global.score = 0;
 
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1
 /// @DnDHash : 30550E57
-/// @DnDArgument : "value" "5"
-/// @DnDArgument : "var" "health"
-global.health = 5;
+/// @DnDArgument : "value" "1"
+/// @DnDArgument : "var" "difficulty"
+global.difficulty = 1;
