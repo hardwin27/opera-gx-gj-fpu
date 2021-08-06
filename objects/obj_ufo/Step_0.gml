@@ -2,6 +2,11 @@ debug_count_step += 1;
 
 show_debug_message(string("Step " + string(debug_count_step)));
 
+if (y > room_height + 24)
+{
+	global.ufo_state = 0;
+}
+
 // speed cap
 if (vspeed > 5 and (y < room_height * (5/10)))
 {
@@ -16,11 +21,12 @@ var downspeed =  1 / (y/room_height) // background scroll value
 
 if (global.ufo_state = 1)
 {
+	gravity = 0.2
 		if (y < room_height * (1/10))
 	{
 		vspeed = 0;
 	}
-	else if (y > room_height * (7/10))
+	else if (y > room_height * (9/10))
 	{
 		downspeed = 0;
 	}
@@ -30,11 +36,11 @@ if (global.ufo_state = 1)
 	y += downspeed * 1.5;
 	}
 
-	with(obj_foreground_decor) {
+	with(obj_foreground_handler) {
 	y += downspeed * 0.75;
 	}
 
-	with(obj_background) {
+	with(obj_back_handler) {
 	y += downspeed * 1.75;
 	}
 
@@ -43,13 +49,13 @@ if (global.ufo_state = 1)
 	layer_y("Background", back_y + (downspeed * 2));
 
 	global.score += downspeed / 50;
-	if (global.high_score < global.high_score)
+	if (global.high_score < global.score)
 	{
 		global.high_score = global.score
 	}
 }
 else if (global.ufo_state = 0)
 {
-	
+	//gravity = 0
 }
 

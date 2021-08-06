@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "spr_cloud_dark",
-    "path": "sprites/spr_cloud_dark/spr_cloud_dark.yy",
+    "name": "spr_textbox_start",
+    "path": "sprites/spr_textbox_start/spr_textbox_start.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_back_handler",
-    "path": "objects/obj_back_handler/obj_back_handler.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,7 +21,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":true,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,7 +30,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_cloud_dark",
+  "name": "obj_gui_text",
   "tags": [],
   "resourceType": "GMObject",
 }
