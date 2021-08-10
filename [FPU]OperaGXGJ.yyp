@@ -1,12 +1,15 @@
 {
   "resources": [
+    {"id":{"name":"snd_mag_right","path":"sounds/snd_mag_right/snd_mag_right.yy",},"order":2,},
     {"id":{"name":"spr_score","path":"sprites/spr_score/spr_score.yy",},"order":9,},
     {"id":{"name":"sprsht_plasma_right","path":"sprites/sprsht_plasma_right/sprsht_plasma_right.yy",},"order":6,},
+    {"id":{"name":"snd_turbulence","path":"sounds/snd_turbulence/snd_turbulence.yy",},"order":0,},
     {"id":{"name":"obj_cloud_dark","path":"objects/obj_cloud_dark/obj_cloud_dark.yy",},"order":6,},
     {"id":{"name":"spr_cloud_dark","path":"sprites/spr_cloud_dark/spr_cloud_dark.yy",},"order":8,},
     {"id":{"name":"spr_meteor","path":"sprites/spr_meteor/spr_meteor.yy",},"order":4,},
     {"id":{"name":"spr_cloud","path":"sprites/spr_cloud/spr_cloud.yy",},"order":7,},
     {"id":{"name":"obj_rubbish_handler","path":"objects/obj_rubbish_handler/obj_rubbish_handler.yy",},"order":3,},
+    {"id":{"name":"snd_mag_left","path":"sounds/snd_mag_left/snd_mag_left.yy",},"order":1,},
     {"id":{"name":"fnt_score","path":"fonts/fnt_score/fnt_score.yy",},"order":0,},
     {"id":{"name":"spt_bg","path":"sprites/spt_bg/spt_bg.yy",},"order":11,},
     {"id":{"name":"obj_ufo","path":"objects/obj_ufo/obj_ufo.yy",},"order":0,},

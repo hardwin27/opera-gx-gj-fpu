@@ -1,10 +1,10 @@
-debug_count_step += 1;
+//debug_count_step += 1;
+//show_debug_message(string("Step " + string(debug_count_step)));
 
-show_debug_message(string("Step " + string(debug_count_step)));
 
 if (y > room_height + 24)
 {
-	global.ufo_state = 0;
+	StateSwitch(0);
 }
 
 // speed cap
@@ -19,43 +19,50 @@ else if (vspeed < -5)
 
 var downspeed =  1 / (y/room_height) // background scroll value
 
-if (global.ufo_state = 1)
+
+	
+if (y < room_height * (1/10))
 {
-	gravity = 0.2
-		if (y < room_height * (1/10))
-	{
-		vspeed = 0;
-	}
-	else if (y > room_height * (9/10))
-	{
-		downspeed = 0;
-	}
-
-
-	with(obj_rubbish_handler) {
-	y += downspeed * 1.5;
-	}
-
-	with(obj_foreground_handler) {
-	y += downspeed * 0.75;
-	}
-
-	with(obj_back_handler) {
-	y += downspeed * 1.75;
-	}
-
-	back_y = layer_get_y("Background");
-
-	layer_y("Background", back_y + (downspeed * 2));
-
-	global.score += downspeed / 50;
-	if (global.high_score < global.score)
-	{
-		global.high_score = global.score
-	}
+	vspeed = 0;
 }
-else if (global.ufo_state = 0)
+else if (y > room_height * (9/10))
 {
-	//gravity = 0
+	downspeed = 0;
+}
+
+with(obj_rubbish_handler) {
+y += downspeed * 1.5;
+}
+
+with(obj_foreground_handler) {
+y += downspeed * 0.75;
+}
+
+with(obj_back_handler) {
+y += downspeed * 1.75;
+}
+
+back_y = layer_get_y("Background");
+
+layer_y("Background", back_y + (downspeed * 2));
+
+global.score += downspeed / 50;
+if (global.high_score < global.score)
+{
+	global.high_score = global.score
+}
+
+// If Stunned
+if (global.ufo_state = 2) 
+{
+	if (global.timer = 0) // if stun time has passed
+	{
+		global.ufo_state = 1
+	}
+	else
+	{
+		show_debug_message(string("Stun timer: " + string(global.timer)));
+		global.timer -= 1
+	}
 }
 

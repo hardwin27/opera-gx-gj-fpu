@@ -9,11 +9,11 @@ if(global.ufo_state == 0)
 
 	if(global.first_time == 1)
 	{
-		draw_text(x + 0, y + 0, string("Press space to start!") + "");
+		draw_text(x + 0, y + 0, string("Click to start!") + "");
 	}
 	else if(global.first_time == 0)
 	{
-		draw_text(x + 0, y + 0, string("Game Over. Press space to restart.") + "");
+		draw_text(x + 0, y + 0, string("Game Over. Click to restart!") + "");
 	}
 
 	draw_set_halign(fa_left);
