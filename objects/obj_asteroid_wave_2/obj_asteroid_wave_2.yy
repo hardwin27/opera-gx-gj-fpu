@@ -36,7 +36,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_space_rubbish",
+  "name": "obj_asteroid_wave_2",
   "tags": [],
   "resourceType": "GMObject",
 }

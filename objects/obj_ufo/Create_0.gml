@@ -12,7 +12,7 @@ global.score = 0;
 global.high_score = 0;
 
 global.timer = 0;
-global.object_vertical_bounds = 24;
+global.object_vertical_bounds = 64;
 
 gravity = 0
 
@@ -26,7 +26,7 @@ function StateSwitch(newState)
 		show_debug_message("StateSwitch() called")
 		switch(newState)
 		{
-			case 0: // Transistion to 0
+			case 0: // Transistion to 0 (Game Over)
 			vspeed = 0;
 			hspeed = 0;
 			global.ufo_state = newState; // set ot 0
@@ -34,7 +34,7 @@ function StateSwitch(newState)
 			global.first_time = 0;
 			break;
 		
-			case 1: // Transistion to 1 (Reset game)
+			case 1: // Transistion to 1 (Start/Reset game)
 			gravity = 0.2
 			global.score = 0; //reset score
 			x = 683;
@@ -42,6 +42,11 @@ function StateSwitch(newState)
 			vspeed = -5
 	
 			with(obj_rubbish_handler)
+			{
+				y = room_height + global.object_vertical_bounds;
+			}
+			
+			with(obj_satelite_handler)
 			{
 				y = room_height + global.object_vertical_bounds;
 			}

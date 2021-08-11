@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "spr_cloud",
-    "path": "sprites/spr_cloud/spr_cloud.yy",
+    "name": "spr_satelite_wing",
+    "path": "sprites/spr_satelite_wing/spr_satelite_wing.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_foreground_handler",
-    "path": "objects/obj_foreground_handler/obj_foreground_handler.yy",
+    "name": "obj_satelite_handler",
+    "path": "objects/obj_satelite_handler/obj_satelite_handler.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -25,7 +25,6 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":true,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -34,7 +33,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_cloud",
+  "name": "obj_satelite_wing",
   "tags": [],
   "resourceType": "GMObject",
 }

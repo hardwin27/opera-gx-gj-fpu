@@ -34,6 +34,10 @@ with(obj_rubbish_handler) {
 y += downspeed * 1.5;
 }
 
+with(obj_satelite_handler){
+	y += downspeed * 1.6;
+}
+
 with(obj_foreground_handler) {
 y += downspeed * 0.75;
 }
@@ -42,9 +46,9 @@ with(obj_back_handler) {
 y += downspeed * 1.75;
 }
 
-back_y = layer_get_y("Background");
+back_y = layer_get_y("Background_1");
 
-layer_y("Background", back_y + (downspeed * 2));
+layer_y("Background_1", back_y + (downspeed * 2));
 
 global.score += downspeed / 50;
 if (global.high_score < global.score)
