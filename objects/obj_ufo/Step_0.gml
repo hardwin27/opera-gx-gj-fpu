@@ -50,10 +50,13 @@ back_y = layer_get_y("Background_1");
 
 layer_y("Background_1", back_y + (downspeed * 2));
 
-global.score += downspeed / 50;
-if (global.high_score < global.score)
+if (global.ufo_state == 1)
 {
-	global.high_score = global.score
+	global.score += downspeed / 50;
+	if (global.high_score < global.score)
+	{
+		global.high_score = global.score
+	}
 }
 
 // If Stunned

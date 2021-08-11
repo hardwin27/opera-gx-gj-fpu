@@ -5,13 +5,6 @@
 /// @DnDArgument : "not" "1"
 if(!(global.ufo_state == 0))
 {
-	/// @DnDAction : YoYo Games.Movement.Set_Speed
-	/// @DnDVersion : 1
-	/// @DnDHash : 22462B2F
-	/// @DnDParent : 287B4009
-	/// @DnDArgument : "speed" "-10"
-	speed = -10;
-
 	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1
 	/// @DnDHash : 4449DBEF
@@ -26,4 +19,20 @@ if(!(global.ufo_state == 0))
 	/// @DnDParent : 287B4009
 	/// @DnDArgument : "var" "global.first_time"
 	global.first_time = 0;
+
+	/// @DnDAction : YoYo Games.Common.If_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 313422C4
+	/// @DnDParent : 287B4009
+	/// @DnDArgument : "var" "vspeed"
+	/// @DnDArgument : "op" "1"
+	if(vspeed < 0)
+	{
+		/// @DnDAction : YoYo Games.Movement.Set_Speed
+		/// @DnDVersion : 1
+		/// @DnDHash : 22462B2F
+		/// @DnDParent : 313422C4
+		/// @DnDArgument : "speed" "-10"
+		speed = -10;
+	}
 }

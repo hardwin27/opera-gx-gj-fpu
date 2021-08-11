@@ -34,6 +34,7 @@
     {"id":{"name":"obj_satelite","path":"objects/obj_satelite/obj_satelite.yy",},"order":13,},
     {"id":{"name":"obj_cloud","path":"objects/obj_cloud/obj_cloud.yy",},"order":5,},
     {"id":{"name":"spr_bg_temp","path":"sprites/spr_bg_temp/spr_bg_temp.yy",},"order":3,},
+    {"id":{"name":"snd_jump","path":"sounds/snd_jump/snd_jump.yy",},"order":3,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
