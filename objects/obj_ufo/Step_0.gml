@@ -2,7 +2,7 @@
 //show_debug_message(string("Step " + string(debug_count_step)));
 
 
-if (y > room_height + 24)
+if (y > room_height + 24) // if UFO reaches this height (beyond bottom of screen, Game Over)
 {
 	StateSwitch(0);
 }
@@ -21,17 +21,17 @@ var downspeed =  1 / (y/room_height) // background scroll value
 
 
 	
-if (y < room_height * (1/10))
+if (y < room_height * (1/10)) // If UFO is at top 1/10 of screen
 {
-	vspeed = 0;
+	vspeed = 0; // Cap vspeed
 }
-else if (y > room_height * (9/10))
+else if (y > room_height * (9/10))  // If UFO is at bottom 1/10 of screen
 {
-	downspeed = 0;
+	downspeed = 0;  // dont scroll background, no score
 }
 
-with(obj_rubbish_handler) {
-y += downspeed * 1.5;
+with(obj_rubbish_handler) { // set object parent
+y += downspeed * 1.5;  // every child of parent pushed down at this offset
 }
 
 with(obj_satelite_handler){
@@ -48,9 +48,10 @@ y += downspeed * 1.75;
 
 back_y = layer_get_y("Background_1");
 
-layer_y("Background_1", back_y + (downspeed * 2));
+layer_y("Background_1", back_y + (downspeed * 2));  // push background down
 
-if (global.ufo_state == 1)
+//Scoring
+if (global.ufo_state == 1) // only calc score if UFO is active
 {
 	global.score += downspeed / 50;
 	if (global.high_score < global.score)

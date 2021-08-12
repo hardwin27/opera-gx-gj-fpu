@@ -1,3 +1,6 @@
+// Debug - force state switch
+// Remove later
+
 if(global.ufo_state == 1)
 {
 	StateSwitch(0);
