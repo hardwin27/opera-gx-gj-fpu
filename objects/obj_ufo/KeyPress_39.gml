@@ -6,6 +6,8 @@ if(global.ufo_state == 1)
 	hspeed = 5;
 	vspeed += -5;
 	audio_play_sound(snd_mag_right,0,0);
+	obj_energy_wave_left.visible = true;
+	obj_energy_wave_left.image_speed = 1;
 }
 else if(global.ufo_state == 0)
 {

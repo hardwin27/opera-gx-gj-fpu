@@ -22,7 +22,12 @@
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
   "physicsKinematic": false,
-  "physicsShapePoints": [],
+  "physicsShapePoints": [
+    {"x":4.0,"y":22.0,},
+    {"x":58.0,"y":22.0,},
+    {"x":58.0,"y":45.0,},
+    {"x":4.0,"y":45.0,},
+  ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
