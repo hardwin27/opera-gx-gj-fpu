@@ -1,20 +1,12 @@
 debug_count_draw = 0;
 debug_count_step = 0;
 
-//Globals
-global.ufo_state = 0;
-global.first_time = 1;
-
-global.score = 0;
-global.high_score = 0;
-
-global.timer = 0;
-global.object_vertical_bounds = 64; //despawn bound offset for object
+explosion_spawned = 0;
 
 gravity = 0
 
 //Init position (1 player)
-x = 683;
+x = 800;
 y = 700;
 
 function StateSwitch(newState)
@@ -43,7 +35,7 @@ function StateSwitch(newState)
 			global.score = 0; //reset score
 			
 			// Reset UFO Position (1 Player)
-			x = 683; 
+			x = 800; 
 			y = 700;
 			vspeed = -5  // Initial jump after input
 	

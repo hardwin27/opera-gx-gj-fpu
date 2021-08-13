@@ -23,9 +23,9 @@ draw_set_valign(fa_center);
 /// @DnDHash : 3DDA639F
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y_relative" "1"
-/// @DnDArgument : "caption" ""Score: ""
+/// @DnDArgument : "caption" ""Score P1: ""
 /// @DnDArgument : "var" "round(global.score)"
-draw_text(x + 0, y + 0, string("Score: ") + string(round(global.score)));
+draw_text(x + 0, y + 0, string("Score P1: ") + string(round(global.score)));
 
 /// @DnDAction : YoYo Games.Drawing.Set_Alignment
 /// @DnDVersion : 1.1

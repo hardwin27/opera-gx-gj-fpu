@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_rubbish_handler",
+    "path": "objects/obj_rubbish_handler/obj_rubbish_handler.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 0,

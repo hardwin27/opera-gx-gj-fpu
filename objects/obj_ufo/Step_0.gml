@@ -2,8 +2,13 @@
 //show_debug_message(string("Step " + string(debug_count_step)));
 
 
-if (y > room_height + 24) // if UFO reaches this height (beyond bottom of screen, Game Over)
+if (y > room_height + 12) // if UFO reaches this height (beyond bottom of screen, Game Over)
 {
+	if(explosion_spawned == false)
+	{
+		explosion_spawned = true;
+		instance_create_depth(x, y - 24, 10, obj_explosion);
+	}
 	StateSwitch(0);
 }
 
