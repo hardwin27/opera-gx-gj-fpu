@@ -8,7 +8,6 @@ if(!global.game_on)
 		instance_activate_object(obj_gui_score2);
 		instance_activate_object(obj_energy_wave_left2);
 		instance_activate_object(obj_energy_wave_right2);
-		
 		if(global.first_time = 0)
 		{
 			obj_ufo2.visible = false;
@@ -16,11 +15,13 @@ if(!global.game_on)
 	}
 	else
 	{
-		show_debug_message("Multiplayer off");
-		instance_deactivate_object(obj_ufo2);
-		instance_deactivate_object(obj_gui_score2);
-		instance_deactivate_object(obj_energy_wave_left2);
-		instance_deactivate_object(obj_energy_wave_right2);
-		
+		if(room == "Room1")
+		{
+			show_debug_message("Multiplayer off");
+			instance_deactivate_object(obj_ufo2);
+			instance_deactivate_object(obj_gui_score2);
+			instance_deactivate_object(obj_energy_wave_left2);
+			instance_deactivate_object(obj_energy_wave_right2);
+		}
 	}
 }
